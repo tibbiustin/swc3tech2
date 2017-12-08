@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.example</groupId>
-	<artifactId>dat16j</artifactId>
+	<artifactId>app</artifactId>
 	<version>1</version>
 	<packaging>war</packaging>
 
