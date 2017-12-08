@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="dat16j:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="dat16j-1.war">
+      <element id="artifact" artifact-name="dat16j:war exploded" />
+    </root>
+  </artifact>
+</component>

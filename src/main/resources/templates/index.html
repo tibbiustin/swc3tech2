@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Dat16j</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+            integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+            crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#" th:href="@{/}">MyCRUD APP</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#" th:href="@{/}">Create <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" th:href="@{/user/show}">Show</a>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+
+<!--<img th:src="@{/car.jpg}"/>-->
+
+<div class="jumbotron">
+    <h1 class="display-3">Create a new user. Dat16i!!</h1>
+    <p class="lead">This is a CRUD app made with Spring with DAT16J.</p>
+    <hr class="my-4"/>
+    <p>Fill the info for the new user.</p>
+    <p class="lead">
+    <form action="#" th:action="@{/user/saveandget}" th:object="${user}" method="post">
+        <input class="form-control" type="text" id="name" name="name" placeholder="name" value="alice" required="true"/> <br/>
+        <input class="form-control" type="email" id="email" name="email" placeholder="email" value="a@a.a" required="true"/> <br/>
+        <button type="submit" class="btn btn-danger">Save user</button>
+    </form>
+    </p>
+</div>
+
+
+</body>
+</html>
